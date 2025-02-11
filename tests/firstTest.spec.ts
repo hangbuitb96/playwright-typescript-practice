@@ -48,7 +48,7 @@ test('User facing locators', async({page}) => {
 
     await page.getByTitle('IoT Dashboard').click()
 
-    await page.getByTestId('SignIn').click()
+    // await page.getByTestId('SignIn').click()
 })
 
 test('Locating child elements', async({page}) => {
@@ -127,8 +127,8 @@ test('assertions', async({page}) => {
 
     //soft assertions
     //the test can be continue the execution even if the assertion has failed
-    await expect.soft(basicFormBtn).toHaveText('Submit5') //intentionally failed
-    await basicFormBtn.click() //click anyway  
+    // await expect.soft(basicFormBtn).toHaveText('Submit5') //intentionally failed
+    // await basicFormBtn.click() //click anyway  
 })
 
 

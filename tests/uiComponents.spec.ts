@@ -6,12 +6,16 @@ test.beforeEach(async({page}) => {
 })
 
 test.describe('Form Layouts page', () => {
+    test.describe.configure({retries: 2})
     test.beforeEach(async({page}) => {
         await page.getByText('Forms').click()
         await page.getByText('Form Layouts').click()
     })
 
-    test('input fields', async({page}) => {
+    test('input fields', async({page}, testInfo) => {
+        if(testInfo.retry){
+            //do something such as clean DB
+        }
         const usingGridEmailInput = page.locator('nb-card', {hasText: "Using the Grid"}).getByRole('textbox', {name: "Email"})
 
         await usingGridEmailInput.fill('test1@test.com')

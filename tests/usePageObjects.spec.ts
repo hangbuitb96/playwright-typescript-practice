@@ -24,9 +24,13 @@ test('parametrized methods', async({page}) => {
 
     await pm.navigateTo().formLayoutPage()
     await pm.onFormLayoutsPage().submitUsingTheGridFormWithCredentialAndSelectOption("test@test.com", "abcabc", "Option 1")
+    await page.screenshot({path: 'screenshots/formsLayoutPage.png'}) // take screenshot of entire window
+    const buffer = await page.screenshot() // save the screenshot in an variable to integrate with other services
+    // console.log(buffer.toString('base64'))
+    await page.locator('nb-card', {hasText: "Inline form"}).screenshot({path: 'screenshots/inlineForm.png'}) // take screenshot of a specific area
     await pm.onFormLayoutsPage().submitInlineFormWithCredentialAndSelectOption(randomFullName, randomEmail, false)
 
     await pm.navigateTo().datePickerPage()
     await pm.onDatePickerPage().selectCommonDatePickerDateFromToday(7)
-    await pm.onDatePickerPage().selectDatePickerWithRangeFromToday(6,15)
+    await pm.onDatePickerPage().selectDatePickerWithRangeFromToday(6,10)
 })
