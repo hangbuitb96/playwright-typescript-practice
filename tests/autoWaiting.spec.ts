@@ -4,7 +4,7 @@ import {test, expect} from '@playwright/test'
 // that can wait for the certain desired condition up to the limit of the timeout
 // default = 30s
 test.beforeEach(async({page}, testInfo) => {
-    await page.goto('http://uitestingplayground.com/ajax')
+    await page.goto(process.env.URL)
     await page.getByText('Button Triggering AJAX Request').click()
     testInfo.setTimeout(testInfo.timeout + 2000) //modify (add 2s to) test timeout for a particular test suite
 })

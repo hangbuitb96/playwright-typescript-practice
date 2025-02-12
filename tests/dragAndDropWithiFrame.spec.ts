@@ -1,7 +1,8 @@
-import {test, expect} from '@playwright/test'
+import {expect} from '@playwright/test'
+import {test} from '../test-options' //because in test-options.ts, test is imported from @playwright/test
 
-test('drag and drop with iframe', async({page}) => {
-    await page.goto('https://www.globalsqa.com/demo-site/draganddrop/')
+test('drag and drop with iframe', async({page, globalsQaURL}) => {
+    await page.goto(globalsQaURL)
 
     //switch to the iframe
     const frame = page.frameLocator('[rel-title="Photo Manager"] iframe')

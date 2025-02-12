@@ -6,7 +6,8 @@
   "scripts": {
     "pageObjects-chrome": "npx playwright test usePageObjects.spec.ts --project=chromium",
     "pageObjects-firefox": "npx playwright test usePageObjects.spec.ts --project=firefox",
-    "pagePbjects-all": "npm run pageObjects-chrome && npm run pageObjects-firefox"
+    "pagePbjects-all": "npm run pageObjects-chrome && npm run pageObjects-firefox",
+    "autoWaiting-dev": "set URL=http://uitestingplayground.com/ajax && npx playwright test autoWaiting.spec.ts --project=chromium" //run on command promt
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@faker-js/faker": "^9.4.0",
     "@playwright/test": "^1.44.0",
-    "@types/node": "^20.12.11"
+    "@types/node": "^20.12.11",
+    "dotenv": "^16.4.7"
   }
 }
