@@ -7,7 +7,7 @@
     "pageObjects-chrome": "npx playwright test usePageObjects.spec.ts --project=chromium",
     "pageObjects-firefox": "npx playwright test usePageObjects.spec.ts --project=firefox",
     "pagePbjects-all": "npm run pageObjects-chrome && npm run pageObjects-firefox",
-    "autoWaiting-dev": "set URL=http://uitestingplayground.com/ajax && npx playwright test autoWaiting.spec.ts --project=chromium" //run on command promt
+    "autoWaiting-dev": "set URL=http://uitestingplayground.com/ajax && npx playwright test autoWaiting.spec.ts --project=chromium"
   },
   "keywords": [],
   "author": "",

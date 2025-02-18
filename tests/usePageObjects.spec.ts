@@ -23,7 +23,7 @@ test('parametrized methods', async({page}) => {
     const randomEmail = `${randomFullName.replace(/\s+/g, '')}${faker.number.int(1000)}@test.com` // randomFullName.replace(/\s+/g, '') to remove all whitespaces
 
     await pm.navigateTo().formLayoutPage()
-    await pm.onFormLayoutsPage().submitUsingTheGridFormWithCredentialAndSelectOption("test@test.com", "abcabc", "Option 1")
+    await pm.onFormLayoutsPage().submitUsingTheGridFormWithCredentialAndSelectOption(process.env.USERNAME, process.env.PASSWORD, "Option 1")
     await page.screenshot({path: 'screenshots/formsLayoutPage.png'}) // take screenshot of entire window
     const buffer = await page.screenshot() // save the screenshot in an variable to integrate with other services
     // console.log(buffer.toString('base64'))
