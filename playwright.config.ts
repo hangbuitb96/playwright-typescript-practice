@@ -1,10 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 import type { TestOptions } from './test-options';
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
 require('dotenv').config();
 
 /**
@@ -41,7 +37,7 @@ export default defineConfig<TestOptions>({
     // actionTimeout: 5000,
     // navigationTimeout: 5000
     video: {
-      mode: 'on',
+      mode: 'off',
       size: {width: 1920, height: 1080}
     }
   },
@@ -76,32 +72,12 @@ export default defineConfig<TestOptions>({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
-  ],
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
+    {
+      name: 'pageObjectFullScreen',
+      testMatch: 'usePageObjects.spec.ts', // run this project to run only this file spec
+      use: {
+        viewport: {width: 1920, height: 1080} // full screen size
+      }
+    }
+  ]
 });
