@@ -6,7 +6,7 @@ test.beforeEach(async({page}) => {
     await page.goto('/')
 })
 
-test('navigate to form page', async({page}) =>{
+test('navigate to form page @smoke @regression', async({page}) =>{
     const pm = new PageManager(page)
     await pm.navigateTo().formLayoutPage()
     await pm.navigateTo().datePickerPage()
@@ -15,7 +15,7 @@ test('navigate to form page', async({page}) =>{
     await pm.navigateTo().tooltipPage()
 })
 
-test('parametrized methods', async({page}) => {
+test('parametrized methods @smoke', async({page}) => {
     const pm = new PageManager(page)
 
     //generate random test data
@@ -32,5 +32,5 @@ test('parametrized methods', async({page}) => {
 
     await pm.navigateTo().datePickerPage()
     await pm.onDatePickerPage().selectCommonDatePickerDateFromToday(7)
-    await pm.onDatePickerPage().selectDatePickerWithRangeFromToday(6,10)
+    await pm.onDatePickerPage().selectDatePickerWithRangeFromToday(1,5)
 })
