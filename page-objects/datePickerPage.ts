@@ -43,7 +43,7 @@ export class DatePickerPage extends HelperBase{
             calendarMonthAndYear = await this.page.locator('nb-calendar-view-mode').textContent() // get the displayed month and year
             //repeat the cycle, once match, stop the while loop
         }
-        await this.page.locator('.day-cell.ng-star-inserted').getByText(expectedDate, {exact: true}).click()
+        await this.page.locator('.day-cell.ng-star-inserted:not(.bounding-month)').getByText(expectedDate, {exact: true}).click()
         // getByText('1', {exact: true}) to click on the exact day 1
         return dateToAssert
     }

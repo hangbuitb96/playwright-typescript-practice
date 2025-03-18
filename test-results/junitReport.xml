@@ -1,34 +1,6 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="34.546579999999956">
-<testsuite name="usePageObjects.spec.ts" timestamp="2025-03-18T15:53:53.087Z" hostname="chromium" tests="2" failures="1" skipped="0" time="30.329" errors="0">
-<testcase name="navigate to form page @smoke @regression" classname="usePageObjects.spec.ts" time="17.175">
-</testcase>
-<testcase name="parametrized methods @smoke" classname="usePageObjects.spec.ts" time="13.154">
-<failure message="usePageObjects.spec.ts:18:5 parametrized methods @smoke" type="FAILURE">
-<![CDATA[  [chromium] › usePageObjects.spec.ts:18:5 › parametrized methods @smoke ───────────────────────────
-
-    Error: locator.click: Error: strict mode violation: locator('.day-cell.ng-star-inserted').getByText('25', { exact: true }) resolved to 2 elements:
-        1) <div class="cell-content"> 25 </div> aka getByText('25').nth(1)
-        2) <div class="cell-content"> 25 </div> aka getByText('25').nth(2)
-
-    Call log:
-      - waiting for locator('.day-cell.ng-star-inserted').getByText('25', { exact: true })
-
-
-       at ..\page-objects\datePickerPage.ts:46
-
-      44 |             //repeat the cycle, once match, stop the while loop
-      45 |         }
-    > 46 |         await this.page.locator('.day-cell.ng-star-inserted').getByText(expectedDate, {exact: true}).click()
-         |                                                                                                      ^
-      47 |         // getByText('1', {exact: true}) to click on the exact day 1
-      48 |         return dateToAssert
-      49 |     }
-
-        at DatePickerPage.selectDateInTheCalendar (C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\page-objects\datePickerPage.ts:46:102)
-        at DatePickerPage.selectCommonDatePickerDateFromToday (C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\page-objects\datePickerPage.ts:15:30)
-        at C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\tests\usePageObjects.spec.ts:34:5
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="18.09621499999985">
+<testsuite name="usePageObjects.spec.ts" timestamp="2025-03-18T16:06:36.709Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.361" errors="0">
+<testcase name="parametrized methods @smoke" classname="usePageObjects.spec.ts" time="14.361">
 </testcase>
 </testsuite>
 </testsuites>
