@@ -32,5 +32,5 @@ test('parametrized methods @smoke', async({page}) => {
 
     await pm.navigateTo().datePickerPage()
     await pm.onDatePickerPage().selectCommonDatePickerDateFromToday(7)
-    await pm.onDatePickerPage().selectDatePickerWithRangeFromToday(1,5)
+    await pm.onDatePickerPage().selectDatePickerWithRangeFromToday(1,2)
 })

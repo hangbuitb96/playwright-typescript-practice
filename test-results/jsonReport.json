@@ -1,0 +1,258 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/jsonReport.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junitReport.xml"
+        }
+      ],
+      [
+        "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "testMobile.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "dev",
+        "name": "dev",
+        "testDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "qa",
+        "name": "qa",
+        "testDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "pageObjectFullScreen",
+        "name": "pageObjectFullScreen",
+        "testDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "usePageObjects.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.44.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "usePageObjects.spec.ts",
+      "file": "usePageObjects.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "navigate to form page @smoke @regression",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 17175,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-18T15:53:54.463Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fa018c391591bb0319e0-4818856c520db8ab5d30",
+          "file": "usePageObjects.spec.ts",
+          "line": 9,
+          "column": 5
+        },
+        {
+          "title": "parametrized methods @smoke",
+          "ok": false,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 13154,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('.day-cell.ng-star-inserted').getByText('25', { exact: true }) resolved to 2 elements:\n    1) <div class=\"cell-content\"> 25 </div> aka getByText('25').nth(1)\n    2) <div class=\"cell-content\"> 25 </div> aka getByText('25').nth(2)\n\nCall log:\n  \u001b[2m- waiting for locator('.day-cell.ng-star-inserted').getByText('25', { exact: true })\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('.day-cell.ng-star-inserted').getByText('25', { exact: true }) resolved to 2 elements:\n    1) <div class=\"cell-content\"> 25 </div> aka getByText('25').nth(1)\n    2) <div class=\"cell-content\"> 25 </div> aka getByText('25').nth(2)\n\nCall log:\n  \u001b[2m- waiting for locator('.day-cell.ng-star-inserted').getByText('25', { exact: true })\u001b[22m\n\n    at DatePickerPage.selectDateInTheCalendar (C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\page-objects\\datePickerPage.ts:46:102)\n    at DatePickerPage.selectCommonDatePickerDateFromToday (C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\page-objects\\datePickerPage.ts:15:30)\n    at C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\usePageObjects.spec.ts:34:5",
+                    "location": {
+                      "file": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\page-objects\\datePickerPage.ts",
+                      "column": 102,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\page-objects\\datePickerPage.ts:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m             \u001b[90m//repeat the cycle, once match, stop the while loop\u001b[39m\n \u001b[90m 45 |\u001b[39m         }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.day-cell.ng-star-inserted'\u001b[39m)\u001b[33m.\u001b[39mgetByText(expectedDate\u001b[33m,\u001b[39m {exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         \u001b[90m// getByText('1', {exact: true}) to click on the exact day 1\u001b[39m\n \u001b[90m 48 |\u001b[39m         \u001b[36mreturn\u001b[39m dateToAssert\n \u001b[90m 49 |\u001b[39m     }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\page-objects\\datePickerPage.ts",
+                        "column": 102,
+                        "line": 46
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('.day-cell.ng-star-inserted').getByText('25', { exact: true }) resolved to 2 elements:\n    1) <div class=\"cell-content\"> 25 </div> aka getByText('25').nth(1)\n    2) <div class=\"cell-content\"> 25 </div> aka getByText('25').nth(2)\n\nCall log:\n  \u001b[2m- waiting for locator('.day-cell.ng-star-inserted').getByText('25', { exact: true })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\page-objects\\datePickerPage.ts:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m             \u001b[90m//repeat the cycle, once match, stop the while loop\u001b[39m\n \u001b[90m 45 |\u001b[39m         }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.day-cell.ng-star-inserted'\u001b[39m)\u001b[33m.\u001b[39mgetByText(expectedDate\u001b[33m,\u001b[39m {exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m         \u001b[90m// getByText('1', {exact: true}) to click on the exact day 1\u001b[39m\n \u001b[90m 48 |\u001b[39m         \u001b[36mreturn\u001b[39m dateToAssert\n \u001b[90m 49 |\u001b[39m     }\u001b[0m\n\n\u001b[2m    at DatePickerPage.selectDateInTheCalendar (C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\page-objects\\datePickerPage.ts:46:102)\u001b[22m\n\u001b[2m    at DatePickerPage.selectCommonDatePickerDateFromToday (C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\page-objects\\datePickerPage.ts:15:30)\u001b[22m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\usePageObjects.spec.ts:34:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-18T15:54:13.038Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\page-objects\\datePickerPage.ts",
+                    "column": 102,
+                    "line": 46
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fa018c391591bb0319e0-eccf49614a27c0c201de",
+          "file": "usePageObjects.spec.ts",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-18T15:53:51.834Z",
+    "duration": 34546.57999999996,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
