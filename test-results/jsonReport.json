@@ -6,12 +6,12 @@
     "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
-    "globalTimeout": 0,
+    "globalTimeout": 60000,
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "reporter": [
@@ -28,7 +28,7 @@
         }
       ],
       [
-        "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "html",
         null
       ]
     ],
@@ -50,7 +50,7 @@
         "testMatch": [
           "testMobile.spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 40000
       },
       {
         "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
@@ -64,7 +64,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 40000
       },
       {
         "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
@@ -78,7 +78,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 40000
       },
       {
         "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
@@ -92,7 +92,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 40000
       },
       {
         "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
@@ -106,7 +106,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 40000
       },
       {
         "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
@@ -120,7 +120,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 40000
       },
       {
         "outputDir": "C:/Users/PC/Desktop/playwright_practice_app/playwright_typescript_framework/test-results",
@@ -134,66 +134,277 @@
         "testMatch": [
           "usePageObjects.spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 40000
       }
     ],
     "shard": null,
-    "updateSnapshots": "missing",
+    "updateSnapshots": "all",
     "version": "1.44.0",
-    "workers": 1,
+    "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "usePageObjects.spec.ts",
-      "file": "usePageObjects.spec.ts",
+      "title": "uiComponents.spec.ts",
+      "file": "uiComponents.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "parametrized methods @smoke",
-          "ok": true,
-          "tags": [
-            "smoke"
-          ],
-          "tests": [
+          "title": "Form Layouts page @block",
+          "file": "uiComponents.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "radio buttons",
+              "ok": true,
+              "tags": [
+                "block"
+              ],
+              "tests": [
                 {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 14361,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-18T16:06:37.759Z",
-                  "attachments": []
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "dev",
+                  "projectName": "dev",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8263,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts-snapshots\\Form-Layouts-page-block-radio-buttons-1-dev-win32.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-20T15:21:26.094Z",
+                      "attachments": [
+                        {
+                          "name": "Form-Layouts-page-block-radio-buttons-1-actual.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\test-results\\uiComponents-Form-Layouts-page-block-radio-buttons-dev\\Form-Layouts-page-block-radio-buttons-1-actual.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "61472adf5185ec2f0dc4-29f137acc620b8bf812c",
+              "file": "uiComponents.spec.ts",
+              "line": 34,
+              "column": 10
+            },
+            {
+              "title": "radio buttons",
+              "ok": true,
+              "tags": [
+                "block"
+              ],
+              "tests": [
+                {
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "qa",
+                  "projectName": "qa",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 8514,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts-snapshots\\Form-Layouts-page-block-radio-buttons-1-qa-win32.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-20T15:21:26.253Z",
+                      "attachments": [
+                        {
+                          "name": "Form-Layouts-page-block-radio-buttons-1-actual.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\test-results\\uiComponents-Form-Layouts-page-block-radio-buttons-qa\\Form-Layouts-page-block-radio-buttons-1-actual.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "61472adf5185ec2f0dc4-30fa02e80ab3d109b6e7",
+              "file": "uiComponents.spec.ts",
+              "line": 34,
+              "column": 10
+            },
+            {
+              "title": "radio buttons",
+              "ok": true,
+              "tags": [
+                "block"
+              ],
+              "tests": [
+                {
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 8861,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts-snapshots\\Form-Layouts-page-block-radio-buttons-1-chromium-win32.png is re-generated, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-20T15:21:26.178Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "61472adf5185ec2f0dc4-25fe52f2e8ac925bedb0",
+              "file": "uiComponents.spec.ts",
+              "line": 34,
+              "column": 10
+            },
+            {
+              "title": "radio buttons",
+              "ok": true,
+              "tags": [
+                "block"
+              ],
+              "tests": [
+                {
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 14241,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts-snapshots\\Form-Layouts-page-block-radio-buttons-1-firefox-win32.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-20T15:21:26.130Z",
+                      "attachments": [
+                        {
+                          "name": "Form-Layouts-page-block-radio-buttons-1-actual.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\test-results\\uiComponents-Form-Layouts-page-block-radio-buttons-firefox\\Form-Layouts-page-block-radio-buttons-1-actual.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "61472adf5185ec2f0dc4-69e871e77e937c0319fb",
+              "file": "uiComponents.spec.ts",
+              "line": 34,
+              "column": 10
+            },
+            {
+              "title": "radio buttons",
+              "ok": false,
+              "tags": [
+                "block"
+              ],
+              "tests": [
+                {
+                  "timeout": 40000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "timedOut",
+                      "duration": 40020,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 40000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 40000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts:4:6",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts",
+                          "column": 6,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m { time } \u001b[36mfrom\u001b[39m \u001b[32m'console'\u001b[39m\n \u001b[90m 3 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\n \u001b[90m 6 |\u001b[39m })\n \u001b[90m 7 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts",
+                            "column": 6,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 40000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m { time } \u001b[36mfrom\u001b[39m \u001b[32m'console'\u001b[39m\n \u001b[90m 3 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\n \u001b[90m 6 |\u001b[39m })\n \u001b[90m 7 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts:4:6\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts",
+                            "column": 16,
+                            "line": 5
+                          },
+                          "message": "Error: page.goto: Test timeout of 40000ms exceeded.\nCall log:\n  \u001b[2m- navigating to \"http://localhost:4200/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m\n \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m({page}) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m })\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Form Layouts page @block'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts:5:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-20T15:21:26.215Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\playwright_practice_app\\playwright_typescript_framework\\tests\\uiComponents.spec.ts",
+                        "column": 6,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "61472adf5185ec2f0dc4-3e79de82347299a2c9ac",
+              "file": "uiComponents.spec.ts",
+              "line": 34,
+              "column": 10
             }
-          ],
-          "id": "fa018c391591bb0319e0-eccf49614a27c0c201de",
-          "file": "usePageObjects.spec.ts",
-          "line": 18,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-18T16:06:34.291Z",
-    "duration": 18096.21499999985,
-    "expected": 1,
+    "startTime": "2025-03-20T15:21:24.759Z",
+    "duration": 41762.433,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

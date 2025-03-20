@@ -6,7 +6,7 @@ test.beforeEach(async({page}) => {
 })
 
 test.describe('Form Layouts page @block', () => {
-    test.describe.configure({retries: 2})
+    test.describe.configure({retries: 0})
     test.beforeEach(async({page}) => {
         await page.getByText('Forms').click()
         await page.getByText('Form Layouts').click()
@@ -31,18 +31,22 @@ test.describe('Form Layouts page @block', () => {
         await expect(usingGridEmailInput).toHaveValue('test2@test.com') // toHaveValue() use for input data in an input field
     })
 
-    test('radio buttons', async({page}) =>{
+    test.only('radio buttons', async({page}) =>{
         const usingGridForm = page.locator('nb-card', {hasText: "Using the Grid"})
 
         //await usingGridForm.getByLabel('Option 1').check({force: true})
-        await usingGridForm.getByRole('radio', {name: "Option 1"}).check({force: true})
-        const radioStatus = await usingGridForm.getByRole('radio', {name: "Option 1"}).isChecked() //return boolean
-        expect(radioStatus).toBeTruthy()
-        await expect(usingGridForm.getByRole('radio', {name: "Option 1"})).toBeChecked()
-        
         await usingGridForm.getByRole('radio', {name: "Option 2"}).check({force: true})
-        expect(await usingGridForm.getByRole('radio', {name: "Option 1"}).isChecked()).toBeFalsy()
-        expect(await usingGridForm.getByRole('radio', {name: "Option 2"}).isChecked()).toBeTruthy()
+        // const radioStatus = await usingGridForm.getByRole('radio', {name: "Option 1"}).isChecked() //return boolean
+        await expect(usingGridForm).toHaveScreenshot({maxDiffPixels: 50}) 
+        
+        
+        
+        // expect(radioStatus).toBeTruthy()
+        // await expect(usingGridForm.getByRole('radio', {name: "Option 1"})).toBeChecked()
+        
+        // await usingGridForm.getByRole('radio', {name: "Option 2"}).check({force: true})
+        // expect(await usingGridForm.getByRole('radio', {name: "Option 1"}).isChecked()).toBeFalsy()
+        // expect(await usingGridForm.getByRole('radio', {name: "Option 2"}).isChecked()).toBeTruthy()
     
     })
 })

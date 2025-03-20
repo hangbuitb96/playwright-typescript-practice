@@ -1,6 +1,75 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="18.09621499999985">
-<testsuite name="usePageObjects.spec.ts" timestamp="2025-03-18T16:06:36.709Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.361" errors="0">
-<testcase name="parametrized methods @smoke" classname="usePageObjects.spec.ts" time="14.361">
+<testsuites id="" name="" tests="5" failures="1" skipped="0" errors="0" time="41.762432999999994">
+<testsuite name="uiComponents.spec.ts" timestamp="2025-03-20T15:21:25.052Z" hostname="dev" tests="1" failures="0" skipped="0" time="8.263" errors="0">
+<testcase name="Form Layouts page @block › radio buttons" classname="uiComponents.spec.ts" time="8.263">
+<system-out>
+<![CDATA[A snapshot doesn't exist at C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\tests\uiComponents.spec.ts-snapshots\Form-Layouts-page-block-radio-buttons-1-dev-win32.png, writing actual.
+
+[[ATTACHMENT|uiComponents-Form-Layouts-page-block-radio-buttons-dev\Form-Layouts-page-block-radio-buttons-1-actual.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="uiComponents.spec.ts" timestamp="2025-03-20T15:21:25.052Z" hostname="qa" tests="1" failures="0" skipped="0" time="8.514" errors="0">
+<testcase name="Form Layouts page @block › radio buttons" classname="uiComponents.spec.ts" time="8.514">
+<system-out>
+<![CDATA[A snapshot doesn't exist at C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\tests\uiComponents.spec.ts-snapshots\Form-Layouts-page-block-radio-buttons-1-qa-win32.png, writing actual.
+
+[[ATTACHMENT|uiComponents-Form-Layouts-page-block-radio-buttons-qa\Form-Layouts-page-block-radio-buttons-1-actual.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="uiComponents.spec.ts" timestamp="2025-03-20T15:21:25.052Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.861" errors="0">
+<testcase name="Form Layouts page @block › radio buttons" classname="uiComponents.spec.ts" time="8.861">
+<system-out>
+<![CDATA[C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\tests\uiComponents.spec.ts-snapshots\Form-Layouts-page-block-radio-buttons-1-chromium-win32.png is re-generated, writing actual.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="uiComponents.spec.ts" timestamp="2025-03-20T15:21:25.052Z" hostname="firefox" tests="1" failures="0" skipped="0" time="14.241" errors="0">
+<testcase name="Form Layouts page @block › radio buttons" classname="uiComponents.spec.ts" time="14.241">
+<system-out>
+<![CDATA[A snapshot doesn't exist at C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\tests\uiComponents.spec.ts-snapshots\Form-Layouts-page-block-radio-buttons-1-firefox-win32.png, writing actual.
+
+[[ATTACHMENT|uiComponents-Form-Layouts-page-block-radio-buttons-firefox\Form-Layouts-page-block-radio-buttons-1-actual.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="uiComponents.spec.ts" timestamp="2025-03-20T15:21:25.052Z" hostname="webkit" tests="1" failures="1" skipped="0" time="40.02" errors="0">
+<testcase name="Form Layouts page @block › radio buttons" classname="uiComponents.spec.ts" time="40.02">
+<failure message="uiComponents.spec.ts:34:10 radio buttons" type="FAILURE">
+<![CDATA[  [webkit] › uiComponents.spec.ts:34:10 › Form Layouts page @block › radio buttons ─────────────────
+
+    Test timeout of 40000ms exceeded while running "beforeEach" hook.
+
+      2 | import { time } from 'console'
+      3 |
+    > 4 | test.beforeEach(async({page}) => {
+        |      ^
+      5 |     await page.goto('/')
+      6 | })
+      7 |
+
+        at C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\tests\uiComponents.spec.ts:4:6
+
+    Error: page.goto: Test timeout of 40000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      3 |
+      4 | test.beforeEach(async({page}) => {
+    > 5 |     await page.goto('/')
+        |                ^
+      6 | })
+      7 |
+      8 | test.describe('Form Layouts page @block', () => {
+
+        at C:\Users\PC\Desktop\playwright_practice_app\playwright_typescript_framework\tests\uiComponents.spec.ts:5:16
+]]>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>
